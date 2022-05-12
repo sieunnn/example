@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,500;0,600;0,700;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: url(img/bg-main.jpg) no-repeat;
+    background-size: cover;
+    /* 무조건 넓이를 기준으로 */
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+
+header nav ul li a {
+    margin-right: 10px;
+    border-width: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.slick .slick-slide {
+    position: relative;
+}
+
+.slick .slick-slide .left {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.slick .slick-slide .left img {
+    transform: translate(-200%, 0);
+    opacity: 0;
+    transition: 1.5s;
+    padding-top: 20%;
+
+
+}
+
+.slick .slick-slide.slick-active .left img {
+
+    transform: translate(15%, 0);
+    opacity: 1;
+
+}
+
+.slick .slick-slide .left .jordon {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: -1;
+    text-align: right;
+    transform: translate(100%, 0);
+    transition: 1.5s;
+    opacity: 0;
+
+}
+
+.slick .slick-slide.slick-active .left .jordon {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+.slick .slick-slide .left .jordon h2 {
+    font-size: 12vw;
+    font-weight: 800;
+    color: #fff;
+    line-height: 0.9;
+    text-align: left;
+}
+
+.slick .slick-slide .left .jordon span {
+    font-size: 30px;
+    color: #fff;
+
+
+}
+
+
+.slick .right {
+    float: right;
+    width: 40%;
+    box-sizing: border-box;
+    padding-top: 10%;
+    color: #fff;
+}
+
+
+.slick .right .right-top h3 {
+    display: inline-block;
+    font-size: 50px;
+    margin-right: 20px;
+    font-style: italic;
+
+}
+
+
+
+
+.slick .slick-slide .right .right-top span {
+    transform: translate(-100%, 0);
+    transition: 1.5s;
+    opacity: 0;
+    
+    display: inline-block;
+}
+
+.slick .slick-slide.slick-active .right .right-top span {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+.slick .slick-slide .right .right-top h3 {
+    transform: translate(0, -100%);
+    transition: 1.5s;
+    display: inline-block;
+    opacity: 0;
+}
+
+.slick .slick-slide.slick-active .right .right-top h3 {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .slick-slide .right .right-top h4 {
+    transform: translate(-100%, 0);
+    transition: 1.5s;
+    opacity: 0;
+
+}
+
+.slick .slick-slide.slick-active .right .right-top h4 {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition-delay: 0.s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick .right .right-top .star i {
+    color: #ffde00;
+    margin-right: 6px;
+}
+
+.slick .right .right-top .star i:last-child {
+    color: #fff;
+}
+
+
+.slick .right .right-top h4 {
+    font-size: 30px;
+    padding-top: 20px;
+    font-style: italic;
+
+}
+
+.slick .right .right-m  {
+    line-height: 2;
+
+}
+
+.slick .right .right-m ul{
+    margin-bottom: 30px;
+}
+
+.slick .right .right-m p{
+    margin: 20px 0;
+}
+
+.slick .right .right-m li {
+    list-style: circle;
+
+}
+
+
+.slick .slick-slide .right .right-m {
+    transform: translate(100%, 0);
+    transition: 1.5s;
+    opacity: 0;
+    display: inline-block;
+}
+
+.slick .slick-slide.slick-active .right .right-m {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+
+.slick .slick-slide .right .right-m ul li {
+    transform: translate(100%, 0);
+    transition: 1.5s;
+    opacity: 0;
+
+}
+
+.slick .slick-slide.slick-active .right .right-m ul li {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+.slick .right .right-b {}
+
+.slick .right .right-b .size {
+    background: #ffde00;
+    border: none;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    padding: 2px;
+
+}
+
+.slick .right .right-b .cart {
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.slick .right .right-b span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.slick-slide img {
+    width: 81%;
+}
+
+
+
+.slick .slick-slide .right .right-b .size {
+    transform: translate(-150%, 0);
+
+    transition: 1.5s;
+    opacity: 0;
+    display: inline-block;
+
+}
+
+.slick .slick-slide.slick-active .right .right-b .size {
+    transform: translate(0, 0);
+    transition-delay: 1s;
+    opacity: 1;
+
+}
+
+.slick .slick-slide .right .right-b .cart {
+    transform: translate(0, 100%);
+    transition: 1.5s;
+
+    opacity: 0;
+    display: inline-block;
+
+}
+
+.slick .slick-slide.slick-active .right .right-b .cart {
+    transform: translate(0, 0);
+    transition-delay: 1s;
+    opacity: 1;
+
+}
+
+.slick .slick-slide .right .right-b span {
+    transform: translate(150%, 0);
+    transition: 1.5s;
+
+    opacity: 0;
+    display: inline-block;
+}
+
+.slick .slick-slide.slick-active .right .right-b span {
+    transform: translate(0, 0);
+    transition-delay: 1s;
+    opacity: 1;
+
+
+}
+
+
+
+
+
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+header nav ul li {
+    color: #fff;
+    font-weight: 600;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header .search i {
+    color: #fff;
+    font-size: 25px;
+
+}
+
+
+
+/* 
+display: none <-> display:block :영역이사라짐 애니메이션 ㄴㄴ
+visibillity: hidden; <-> visibillity: visible : 영역유지  애니메이션 ㄴㄴ
+opacity: 0 <-> opacity : 0 영역유지 애니메이션 ㅇㅇ*/
+
+.slick .slick-prev {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.slick .slick-prev::after{
+    content: '\f515';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+}
+
+
+.slick .slick-next {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    visibility: hidden;
+}

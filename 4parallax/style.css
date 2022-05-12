@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{margin: 0; padding: 0;
+background: #0c0b4c;}
+
+
+
+.container{width: 1000px;
+ 
+height: 1000px;
+background: url(image/mix_brush13.png);
+margin: 100px auto;
+overflow: hidden;
+}
+
+.container .large1 img{ 
+   transform: scale(1.5);
+}
+.container .large2 img{transform: scale(1.5)}

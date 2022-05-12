@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- https://matthew.wagerfield.com/parallax/ -->
+    <div class="container">
+        <div id="scene">
+            <!-- 양수는 따라오고 음수는 반대로감 -->
+
+            <div data-depth="0.03" class="large1">
+                <img src="image/mix_brush12.png" alt="">
+            </div>
+
+            <div data-depth="-0.05" class="large2">
+                <img src="image/mix_brush11.png" alt="">
+            </div>
+
+            
+             <div data-depth="-0.2" >
+                <img src="image/mix_brush2.png" alt="">
+            </div>
+           
+            <div data-depth="-0.1">
+                <img src="image/mix_brush.png" alt="">
+            </div>
+
+            <div data-depth="0.2">
+                <img src="image/mix_brush10.png" alt="">
+            </div>
+
+            <div data-depth="-0.4">
+                <img src="image/mix_brush9.png" alt="">
+            </div>
+
+            <div data-depth="0.5">
+                <img src="image/mix_brush8.png" alt="">
+            </div>
+
+            <div data-depth="0.4">
+                <img src="image/mix_brush7.png" alt="">
+            </div>
+            <div data-depth="-1">
+                <img src="image/mix_brush6.png" alt="">
+            </div>
+            <div data-depth="-0.6">
+                <img src="image/mix_brush5.png" alt="">
+            </div>
+            <div data-depth="-0.3">
+                <img src="image/mix_brush4.png" alt="">
+            </div>
+            <div data-depth="0.9">
+                <img src="image/mix_brush3.png" alt="">
+            </div>
+           
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+
+</html>
